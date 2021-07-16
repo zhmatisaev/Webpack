@@ -3,6 +3,7 @@ import "./styles/style.css";
 import "./styles/less.less";
 import "./styles/scss.scss";
 import "./bable";
+
 import React from 'react'
 import { render } from 'react-dom'
 // import ReactDOM from 'react-dom';
@@ -12,12 +13,23 @@ import WebpackLogo from "@/assets/webpackLogo.png";
 // import json from "./assets/json.json";
 import * as $ from "jquery";
 
+import {Header} from './components/Header/index.jsx'
+
 const post = new Post("Webpack Post Title", WebpackLogo);
 
 $("pre").addClass('code').html(post.toString());
 
 const App = () => (
   <div className="container">
+    <Header/>
+
+
+
+
+
+
+
+    
     <h1>Webpack course</h1>
     <hr />
     <div className="logo"></div>
